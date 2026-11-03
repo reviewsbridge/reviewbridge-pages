@@ -1,0 +1,40 @@
+/* ReviewBridge custom CSS styles */
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Material symbols font configuration */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+.material-symbols-outlined.fill-icon {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Stand visual subtle hover effects */
+.stand-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stand-card:hover {
+    transform: translateY(-2px);
+}
+
+/* FAQ accordion icon rotation */
+.faq-icon {
+    transition: transform 0.25s ease-in-out;
+}
+
+/* Pulse glow for status badge */
+@keyframes softPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.08); }
+}
+
+.pulse-badge {
+    animation: softPulse 2s infinite ease-in-out;
+}
